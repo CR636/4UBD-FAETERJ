@@ -18,6 +18,14 @@ CREATE TABLE departamento (
 
 ALTER TABLE departamento ADD CONSTRAINT departamento_pk PRIMARY KEY ( numero );
 
+CREATE TABLE projeto (
+    nome        VARCHAR2(50) NOT NULL,
+    numero      INTEGER NOT NULL,
+    localizacao VARCHAR2(50) NOT NULL
+);
+
+ALTER TABLE projeto ADD CONSTRAINT projeto_pk PRIMARY KEY ( numero );
+
 CREATE TABLE depto_projeto (
     num_depto   INTEGER NOT NULL,
     num_projeto INTEGER NOT NULL
